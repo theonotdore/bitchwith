@@ -1,0 +1,71 @@
+/* colors and constants */
+
+$font: 'Noto Sans', sans-serif;
+
+body {
+  background: #f0f0f0;
+}
+
+#top-bar {
+  height: 60px;
+  width: 100%;
+  background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+  border-bottom: 1px solid lightgray;
+  -webkit-box-shadow:  1px 1px 0.5px 0.5px rgba(00, 00, 00, 0.1);
+  box-shadow:  1px 1px 0.5px 0.5px rgba(00, 00, 00, 0.1);
+  margin-bottom: 90px;
+}
+
+#top-bar-content {
+  width: 900px;
+  height: 60px;
+  line-height: 61px;
+  margin: auto;
+}
+
+#top-bar-content h1 {
+  float: left;
+  font-size: 22px;
+  font-family: $font;
+  color: #e78729;
+  font-weight: bold;
+}
+
+#navigation {
+  float: right;
+}
+
+#navigation ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: gray;
+  font-family: $font;
+  font-size: 14px;
+}
+
+#yield-wrap {
+  width: 900px;
+  margin: auto;
+}
+
+#message-box {
+  width: 400px;
+  background: #e6e6e6;
+  border-radius: 7px;
+  border: 1px solid #dfdfdf;
+  height: 30px;
+  margin: 20px auto 60px auto;
+  text-align: center;
+  line-height: 30px;
+  font-family: $font;
+  font-size: 13px;
+  color: gray;
+}
+
+
+
+

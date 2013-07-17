@@ -1,0 +1,2 @@
+module BitchingsHelper
+end

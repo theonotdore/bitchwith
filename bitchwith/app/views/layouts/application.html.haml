@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %title Bitchwith
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+    %link{:href => "http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic", :rel => "stylesheet", :type => "text/css"}/
+  %body
+    #top-bar
+      #top-bar-content
+        %h1 bitchwith.me
+        #navigation
+          %ul
+            %li 
+              = link_to "Start bitching!", new_bitching_path
+            %li
+            - unless current_user
+              = link_to "Sign up", new_user_path
+            %li
+            - if current_user
+              = link_to current_user.username, user_path
+            - else
+              = link_to "Login", new_session_path
+
+      - if flash[:notice]
+        #message-box
+          = flash[:notice]
+
+    #yield-wrap
+      = yield
+

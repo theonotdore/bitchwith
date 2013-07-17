@@ -1,0 +1,18 @@
+%h1 Sign up 
+#new-user
+  #signup
+    = form_for @user do |u|
+      = u.label :username, 'Username'
+      = u.text_field :username
+      %br/
+      = u.label :email, 'Email'
+      = u.text_field :email
+      %br/
+      = u.label :password, 'Password'
+      = u.password_field :password
+      %br/
+      = u.label :password_confirmation, 'Password Confirmation'
+      = u.password_field :password_confirmation
+      %br/
+      = u.submit
+
